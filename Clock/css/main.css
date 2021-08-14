@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'CrashNumber';
+  src: url(/Crashnumberinggothic-MAjp.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #000;
+}
+
+body .circle .number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  transform: rotate(var(--rotation));
+  font-family: 'CrashNumber', sans-serif;
+}
+
+body .circle .number1 {
+  --rotation: 30deg;
+}
+
+body .circle .number2 {
+  --rotation: 60deg;
+}
+
+body .circle .number3 {
+  --rotation: 90deg;
+}
+
+body .circle .number4 {
+  --rotation: 120deg;
+}
+
+body .circle .number5 {
+  --rotation: 150deg;
+}
+
+body .circle .number6 {
+  --rotation: 180deg;
+}
+
+body .circle .number7 {
+  --rotation: 210deg;
+}
+
+body .circle .number8 {
+  --rotation: 240deg;
+}
+
+body .circle .number9 {
+  --rotation: 270deg;
+}
+
+body .circle .number10 {
+  --rotation: 300deg;
+}
+
+body .circle .number11 {
+  --rotation: 330deg;
+}
+
+body .circle .number12 {
+  --rotation: 360deg;
+}
+
+body .circle .hand {
+  width: 50%;
+  right: 50%;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  border-radius: 6px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+body .circle .point {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+body .circle .minutes {
+  background-color: #0a0a0a;
+  height: 2px;
+  width: 45%;
+  z-index: 10;
+}
+
+body .circle .hours {
+  width: 30%;
+  z-index: 3;
+  background-color: #4d4d4d;
+}
+
+body .circle .seconds {
+  background-color: salmon;
+  height: 3px;
+  width: 45%;
+  z-index: 10;
+}
+
+body .date {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  padding: 1rem;
+  width: 50vw;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+}
+
+body .date p {
+  font-size: 2rem;
+}
+
+body .date div {
+  font-size: 4rem;
+  font-family: 'CrashNumber', sans-serif;
+  color: seashell;
+}
